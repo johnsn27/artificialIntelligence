@@ -160,7 +160,7 @@ def sgd(params, lr, batch_size):  #@save
 
 
 # Defined in file: ./chapter_linear-networks/linear-regression-concise.md
-train=True):  #@save
+def load_array(data_arrays, batch_size, is_train=True):  #@save
     """Construct a PyTorch data iterator."""
     dataset = data.TensorDataset(*data_arrays)
     return data.DataLoader(dataset, batch_size, shuffle=is_train)
